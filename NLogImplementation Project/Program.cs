@@ -1,10 +1,17 @@
-﻿namespace NLogImplementation_Project
+﻿using System.Collections;
+
+namespace NLogImplementation_Project
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ArrayListOperation arrayListOperation = new ArrayListOperation();
+            arrayListOperation.AddItems();
+            arrayListOperation.ReadItems();
+            arrayListOperation.UpdateItems();
+            arrayListOperation.DeleteItem();
         }
     }
 }
+    
